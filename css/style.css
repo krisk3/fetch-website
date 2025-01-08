@@ -4269,6 +4269,6 @@ html.is-animating .mil-menu-frame {
 /* Add this CSS rule to your stylesheet */
 @media (max-width: 1200px) {
   .responsive-logo {
-      content: url("https://fetchmobility.in/img/photo/logo-light.png");
+    content: url("../img/photo/logo-light.png");
   }
 }
