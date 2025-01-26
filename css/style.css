@@ -67,6 +67,18 @@ main
   margin: 0;
 }
 
+.fetch_image {
+   /* Default to full width */
+  max-width: 400px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 768px) {
+  .fetch_image {
+    max-width: 80%; /* Adjust max width for smaller screens */
+  }
+}
+
 html,
 body {
   padding: 0;
