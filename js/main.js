@@ -250,23 +250,23 @@ $(function () {
         });
     }
 
-    $('.mil-drag, .mil-more, .mil-choose').mouseover(function () {
-        gsap.to($(cursor), .2, {
-            width: 90,
-            height: 90,
-            opacity: 1,
-            ease: 'sine',
-        });
-    });
+    // $('.mil-drag, .mil-more, .mil-choose').mouseover(function () {
+    //     gsap.to($(cursor), .2, {
+    //         width: 90,
+    //         height: 90,
+    //         opacity: 1,
+    //         ease: 'sine',
+    //     });
+    // });
 
-    $('.mil-drag, .mil-more, .mil-choose').mouseleave(function () {
-        gsap.to($(cursor), .2, {
-            width: 20,
-            height: 20,
-            opacity: .1,
-            ease: 'sine',
-        });
-    });
+    // $('.mil-drag, .mil-more, .mil-choose').mouseleave(function () {
+    //     gsap.to($(cursor), .2, {
+    //         width: 20,
+    //         height: 20,
+    //         opacity: .1,
+    //         ease: 'sine',
+    //     });
+    // });
 
     $('.mil-accent-cursor').mouseover(function () {
         gsap.to($(cursor), .2, {
@@ -546,22 +546,24 @@ $(function () {
 
     ***************************/
     var swiper = new Swiper('.mil-portfolio-slider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        speed: 800,
-        parallax: true,
-        mousewheel: {
-            enable: true
-        },
-        navigation: {
-            nextEl: '.mil-portfolio-next',
-            prevEl: '.mil-portfolio-prev',
-        },
-        pagination: {
-            el: '.swiper-portfolio-pagination',
-            type: 'fraction',
-        },
-    });
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+    parallax: true,
+    // Removed mousewheel option completely
+    navigation: {
+        nextEl: '.mil-portfolio-next',
+        prevEl: '.mil-portfolio-prev',
+    },
+    pagination: {
+        el: '.swiper-portfolio-pagination',
+        type: 'fraction',
+    },
+    // Add these to further prevent scroll interference
+    allowTouchMove: false,
+    touchReleaseOnEdges: false,
+    resistance: false
+});
     /***************************
 
     1 item slider
@@ -713,23 +715,23 @@ $(function () {
 
         ***************************/
 
-        $('.mil-drag, .mil-more, .mil-choose').mouseover(function () {
-            gsap.to($(cursor), .2, {
-                width: 90,
-                height: 90,
-                opacity: 1,
-                ease: 'sine',
-            });
-        });
+        // $('.mil-drag, .mil-more, .mil-choose').mouseover(function () {
+        //     gsap.to($(cursor), .2, {
+        //         width: 90,
+        //         height: 90,
+        //         opacity: 1,
+        //         ease: 'sine',
+        //     });
+        // });
 
-        $('.mil-drag, .mil-more, .mil-choose').mouseleave(function () {
-            gsap.to($(cursor), .2, {
-                width: 20,
-                height: 20,
-                opacity: .1,
-                ease: 'sine',
-            });
-        });
+        // $('.mil-drag, .mil-more, .mil-choose').mouseleave(function () {
+        //     gsap.to($(cursor), .2, {
+        //         width: 20,
+        //         height: 20,
+        //         opacity: .1,
+        //         ease: 'sine',
+        //     });
+        // });
 
         $('.mil-accent-cursor').mouseover(function () {
             gsap.to($(cursor), .2, {
