@@ -77,7 +77,7 @@ main
 
 @media screen and (max-width: 768px) {
   .fetch_image {
-    max-width: 90%; /* Adjust max width for smaller screens */
+    max-width: 150%; /* Adjust max width for smaller screens */
   }
 }
 
@@ -1183,6 +1183,12 @@ cursor
   }
 }
 
+@media screen and (max-width: 992) {
+  .landing{
+    padding-top: 20px;
+  }
+}
+
 /* -------------------------------------------
 
 hidden elements
@@ -1761,7 +1767,7 @@ banner
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content {
-    padding-top: 180px;
+    padding-top: 50px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-personal-text {
@@ -1769,7 +1775,7 @@ banner
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content .mil-personal-text {
-    margin-bottom: 80px;
+    margin-bottom: 160px;
     text-align: center;
   }
 }
