@@ -871,6 +871,11 @@ spaces
 .mil-mu-90 {
   margin-top: 90px;
 }
+@media screen and (max-width: 992px) {
+  .mil-mu-90 {
+    margin-top: 0px;
+  }
+}
 
 .mil-mr-30 {
   margin-right: 30px;
@@ -1761,7 +1766,7 @@ banner
 }
 @media screen and (max-width: 992px) {
   .mil-banner-personal .mil-banner-content {
-    padding-top: 180px;
+    padding-top: 1px;
   }
 }
 .mil-banner-personal .mil-banner-content .mil-personal-text {
@@ -4324,7 +4329,7 @@ html.is-animating .mil-menu-frame {
   }
 }
 .mil-portfolio-slider {
-  touch-action: none;
+  touch-action: pan-y pinch-zoom;
 }
 @media (min-width: 1201px) {
   .responsive-logo {

@@ -559,10 +559,8 @@ $(function () {
         el: '.swiper-portfolio-pagination',
         type: 'fraction',
     },
-    // Add these to further prevent scroll interference
-    allowTouchMove: false,
-    touchReleaseOnEdges: false,
-    resistance: false
+    // Enable touch/swipe on mobile
+    allowTouchMove: true
 });
     /***************************
 
